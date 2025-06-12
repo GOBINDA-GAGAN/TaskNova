@@ -11,19 +11,18 @@ export const metadata = {
   title: "TaskNova",
   description: "Project Management App",
 };
-
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
       <html lang="en">
         <body className={inter.className} suppressHydrationWarning={true}>
-          <div className="min-h-screen bg-gradient-to-br from-white via-green-100 to-green-200 dark:from-[#a9adb7] dark:via-[#1e293b] dark:to-[#1965cf] text-gray-900 dark:text-white">
-            <ThemeProvider attribute="class" defaultTheme="light">
+          <ThemeProvider attribute="class" defaultTheme="light">
+            <div className="min-h-screen w-full bg-gradient-to-tl from-orange-200 via-purple-300 to-orange-100">
               <Header />
               <main className="min-h-screen px-4 py-8">{children}</main>
               <Footer />
-            </ThemeProvider>
-          </div>
+            </div>
+          </ThemeProvider>
         </body>
       </html>
     </ClerkProvider>
