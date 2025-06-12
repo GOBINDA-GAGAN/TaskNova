@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Header = () => {
+const SignIn = () => {
   return (
     <div>
-      
+      SignIn 
     </div>
   )
 }
 
-export default Header
+export default SignIn 

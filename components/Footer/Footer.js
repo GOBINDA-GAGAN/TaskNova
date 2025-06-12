@@ -6,7 +6,6 @@ const Footer = () => {
       <p className="flex items-center justify-center gap-2 text-sm text-black">
         Made with
         <a
-  s
           target="_blank"
           rel="noopener noreferrer"
           className="text-green-500 hover:underline"
