@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { SignInButton, SignedOut, SignedIn, UserButton } from "@clerk/nextjs";
 import { Button } from "../ui/button";
-import { PenBox } from "lucide-react";
+import { Building2, PenBox } from "lucide-react";
 import UserMenu from "../user-menu";
 
 const Header = () => {
@@ -23,6 +23,13 @@ const Header = () => {
             <Button className="py-3">
               <PenBox size={20} />
               <span>Create Project</span>
+
+            </Button>
+          </Link>
+          <Link href="/organization">
+            <Button className="py-3">
+              <Building2/>
+              <span>Organization</span>
 
             </Button>
           </Link>
